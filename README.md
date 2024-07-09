@@ -1,47 +1,47 @@
-# Machine Learning Project Template
+Data Scientist Conda Project Template
 
-This project template is designed for machine learning projects, providing a structured setup for data processing, feature engineering, model training, and deployment using Streamlit.
+This project template is designed for Data Science projects (A/B testing, Machine Learning, Deep Learning, etc.), providing a structured setup for data processing, feature engineering, model training, and deployment using Streamlit.
+Setup
+Clone the Repository
 
-## Setup
+bash
 
-1. **Clone this repository**:
-   ```bash
-   git clone <repository_url>
-   cd <repository_name>
+git clone <repository_url>
+cd <repository_name>
 
-    Create the Conda environment:
+Create the Conda Environment
 
-    bash
+bash
 
 conda env create -f environment.yml
 
-Activate the environment:
+Activate the Environment
 
 bash
 
 conda activate yolo_env
 
-Run the Streamlit app:
+Run the Streamlit App
 
 bash
 
-    streamlit run app/app.py
+streamlit run app/app.py
 
 Basic Commands
 
-    Deactivate the environment:
+    Deactivate the Environment:
 
     bash
 
 conda deactivate
 
-Remove the environment:
+Remove the Environment:
 
 bash
 
 conda env remove --name yolo_env
 
-Update the environment (after changing environment.yml):
+Update the Environment (after changing environment.yml):
 
 bash
 
@@ -55,35 +55,31 @@ bash
 
 conda env remove --name yolo_env
 
-Kernel Insertion:
-conda env create -f environment.yml
-conda env list
-conda install ipykernel
-python -m ipykernel install --user --name breast-cancer-pred --display-name "Python (breast-cancer-pred)"
+Kernel Insertion
 
+    Install the IPython Kernel:
+
+    bash
+
+conda install ipykernel
+
+Create a New Kernel:
+
+bash
+
+    python -m ipykernel install --user --name yolo_env --display-name "Python (yolo_env)"
 
 Project Structure
-
-    data/: Contains raw and processed data
-    notebooks/: Jupyter notebooks for exploration and analysis
-    src/: Source code for data processing, feature engineering, and model training
-    app/: Streamlit app for model deployment
-    tests/: Unit tests
-
-Detailed Project Structure
 
 markdown
 
 project_root/
-│
 ├── data/
 │   ├── raw/
 │   ├── processed/
 │   └── external/
-│
 ├── notebooks/
 │   └── exploratory_data_analysis.ipynb
-│
 ├── src/
 │   ├── __init__.py
 │   ├── data/
@@ -99,17 +95,22 @@ project_root/
 │   └── visualization/
 │       ├── __init__.py
 │       └── visualize.py
-│
 ├── app/
 │   └── app.py
-│
 ├── tests/
 │   └── test_make_dataset.py
-│
 ├── .gitignore
 ├── README.md
 ├── requirements.txt
 └── environment.yml
+
+Detailed Project Structure
+
+    data/: Contains raw and processed data
+    notebooks/: Jupyter notebooks for exploration and analysis
+    src/: Source code for data processing, feature engineering, and model training
+    app/: Streamlit app for model deployment
+    tests/: Unit tests
 
 Dependencies
 
@@ -130,18 +131,4 @@ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 Contact
 
-For any questions or suggestions, please contact [Your Name] at [your.email@example.com].
-
-markdown
-
-
-### Summary of Changes
-1. **Added Basic Commands**: Included commands for deactivating, removing, and updating the Conda environment.
-2. **Setup and Cleanup Sections**: Enhanced the setup instructions and added a cleanup section.
-3. **Project Structure**: Improved project structure explanation with a detailed section.
-4. **Dependencies**: Explained how dependencies are managed.
-5. **Running Tests**: Included a section for running unit tests.
-6. **Contributions and License**: Added sections for contributions and license information.
-7. **Contact**: Provided a placeholder for contact information.
-
-This template is versatile and can be adapted for various machine learning projects, ensuring a consistent and organized project structure. If you need further customization, feel free to ask!
+For any questions or suggestions, please contact me at [ghadfield32@gmail.com].
